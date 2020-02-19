@@ -2,10 +2,10 @@
 
 from aws_cdk import core
 
-from wave_native_cdk.wave_native_cdk_stack import WaveNativeCdkStack
+from wave_native_cdk.wave_native_stack import WaveNativeStack
 
 
 app = core.App()
-WaveNativeCdkStack(app, "wave-native-cdk")
+WaveNativeStack(app, "wave-native-cdk")
 
 app.synth()

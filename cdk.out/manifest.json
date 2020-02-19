@@ -1,0 +1,578 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "wave-native-cdk": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "wave-native-cdk.template.json"
+      },
+      "metadata": {
+        "/wave-native-cdk/wave-native_vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpc741E600C",
+            "trace": [
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:286:25)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet1SubnetBBE9D24E",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PublicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:726:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet1RouteTableF07876C2",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PublicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:726:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet1RouteTableAssociation09C90166",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PublicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:726:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet1DefaultRoute39902E0E",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:616:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:317:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:316:32)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet1EIPA633D39E",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:737:27)",
+              "NatGateway.configureNat (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet1NATGateway1381F22C",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:735:21)",
+              "NatGateway.configureNat (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet2Subnet5FFED429",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PublicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:726:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet2RouteTable8794F594",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PublicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:726:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet2RouteTableAssociationD8545300",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PublicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:726:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet2DefaultRoute07A1F09C",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:616:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:317:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:316:32)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet2EIPC88D12C8",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:737:27)",
+              "NatGateway.configureNat (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPublicSubnet2NATGateway6137AFD2",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:735:21)",
+              "NatGateway.configureNat (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet1SubnetC4E591F3",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PrivateSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:753:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet1RouteTableCE4D3B02",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PrivateSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:753:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet1RouteTableAssociation75FCA548",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PrivateSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:753:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet1DefaultRouteAF79ACD5",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:657:23)",
+              "NatGateway.configureSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:63:16)",
+              "NatGateway.configureNat (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:57:18)",
+              "Vpc.createNatGateways (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet2Subnet854DF80A",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PrivateSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:753:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet2RouteTable90E20DFF",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PrivateSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:753:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet2RouteTableAssociation5D024BB6",
+            "trace": [
+              "new Subnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PrivateSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:753:9)",
+              "availabilityZones.forEach (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcPrivateSubnet2DefaultRouteF33601AB",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:657:23)",
+              "NatGateway.configureSubnet (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:63:16)",
+              "NatGateway.configureNat (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:57:18)",
+              "Vpc.createNatGateways (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcIGW3C6D4E2D",
+            "trace": [
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:310:25)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/wave-native-cdk/wave-native_vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "wavenativevpcVPCGWDF3086D1",
+            "trace": [
+              "new Vpc (C:\\Users\\RDB\\AppData\\Local\\Temp\\jsii-kernel-YdHo64\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:312:25)",
+              "obj._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:49)",
+              "Kernel._wrapSandboxCode (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8298:20)",
+              "Kernel._create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7838:26)",
+              "Kernel.create (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7585:21)",
+              "KernelHost.processRequest (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7372:28)",
+              "KernelHost.run (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7312:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\users\\rdb\\documents\\VSCode\\WaveNativeCDK\\.env\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7315:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.24.0",
+      "@aws-cdk/core": "1.24.0",
+      "@aws-cdk/region-info": "1.24.0",
+      "@aws-cdk/aws-iam": "1.24.0",
+      "@aws-cdk/aws-cloudwatch": "1.24.0",
+      "@aws-cdk/aws-logs": "1.24.0",
+      "@aws-cdk/aws-events": "1.24.0",
+      "@aws-cdk/aws-kms": "1.24.0",
+      "@aws-cdk/aws-s3": "1.24.0",
+      "@aws-cdk/aws-ssm": "1.24.0",
+      "@aws-cdk/aws-ec2": "1.24.0",
+      "@aws-cdk/assets": "1.24.0",
+      "@aws-cdk/aws-s3-assets": "1.24.0",
+      "@aws-cdk/aws-sqs": "1.24.0",
+      "@aws-cdk/aws-lambda": "1.24.0",
+      "@aws-cdk/aws-sam": "1.24.0",
+      "@aws-cdk/aws-secretsmanager": "1.24.0",
+      "@aws-cdk/aws-rds": "1.24.0",
+      "jsii-runtime": "Python/3.7.3"
+    }
+  }
+}

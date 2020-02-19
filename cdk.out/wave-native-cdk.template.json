@@ -1,0 +1,456 @@
+{
+  "Resources": {
+    "wavenativevpc741E600C": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/Resource"
+      }
+    },
+    "wavenativevpcPublicSubnet1SubnetBBE9D24E": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/18",
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet1"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet1/Subnet"
+      }
+    },
+    "wavenativevpcPublicSubnet1RouteTableF07876C2": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet1/RouteTable"
+      }
+    },
+    "wavenativevpcPublicSubnet1RouteTableAssociation09C90166": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPublicSubnet1RouteTableF07876C2"
+        },
+        "SubnetId": {
+          "Ref": "wavenativevpcPublicSubnet1SubnetBBE9D24E"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet1/RouteTableAssociation"
+      }
+    },
+    "wavenativevpcPublicSubnet1DefaultRoute39902E0E": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPublicSubnet1RouteTableF07876C2"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "wavenativevpcIGW3C6D4E2D"
+        }
+      },
+      "DependsOn": [
+        "wavenativevpcVPCGWDF3086D1"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet1/DefaultRoute"
+      }
+    },
+    "wavenativevpcPublicSubnet1EIPA633D39E": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet1/EIP"
+      }
+    },
+    "wavenativevpcPublicSubnet1NATGateway1381F22C": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "wavenativevpcPublicSubnet1EIPA633D39E",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "wavenativevpcPublicSubnet1SubnetBBE9D24E"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet1/NATGateway"
+      }
+    },
+    "wavenativevpcPublicSubnet2Subnet5FFED429": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.64.0/18",
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet2"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet2/Subnet"
+      }
+    },
+    "wavenativevpcPublicSubnet2RouteTable8794F594": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet2/RouteTable"
+      }
+    },
+    "wavenativevpcPublicSubnet2RouteTableAssociationD8545300": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPublicSubnet2RouteTable8794F594"
+        },
+        "SubnetId": {
+          "Ref": "wavenativevpcPublicSubnet2Subnet5FFED429"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet2/RouteTableAssociation"
+      }
+    },
+    "wavenativevpcPublicSubnet2DefaultRoute07A1F09C": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPublicSubnet2RouteTable8794F594"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "wavenativevpcIGW3C6D4E2D"
+        }
+      },
+      "DependsOn": [
+        "wavenativevpcVPCGWDF3086D1"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet2/DefaultRoute"
+      }
+    },
+    "wavenativevpcPublicSubnet2EIPC88D12C8": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet2/EIP"
+      }
+    },
+    "wavenativevpcPublicSubnet2NATGateway6137AFD2": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "wavenativevpcPublicSubnet2EIPC88D12C8",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "wavenativevpcPublicSubnet2Subnet5FFED429"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PublicSubnet2/NATGateway"
+      }
+    },
+    "wavenativevpcPrivateSubnet1SubnetC4E591F3": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.128.0/18",
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PrivateSubnet1"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet1/Subnet"
+      }
+    },
+    "wavenativevpcPrivateSubnet1RouteTableCE4D3B02": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PrivateSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet1/RouteTable"
+      }
+    },
+    "wavenativevpcPrivateSubnet1RouteTableAssociation75FCA548": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPrivateSubnet1RouteTableCE4D3B02"
+        },
+        "SubnetId": {
+          "Ref": "wavenativevpcPrivateSubnet1SubnetC4E591F3"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet1/RouteTableAssociation"
+      }
+    },
+    "wavenativevpcPrivateSubnet1DefaultRouteAF79ACD5": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPrivateSubnet1RouteTableCE4D3B02"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "wavenativevpcPublicSubnet1NATGateway1381F22C"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet1/DefaultRoute"
+      }
+    },
+    "wavenativevpcPrivateSubnet2Subnet854DF80A": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.192.0/18",
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PrivateSubnet2"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet2/Subnet"
+      }
+    },
+    "wavenativevpcPrivateSubnet2RouteTable90E20DFF": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc/PrivateSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet2/RouteTable"
+      }
+    },
+    "wavenativevpcPrivateSubnet2RouteTableAssociation5D024BB6": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPrivateSubnet2RouteTable90E20DFF"
+        },
+        "SubnetId": {
+          "Ref": "wavenativevpcPrivateSubnet2Subnet854DF80A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet2/RouteTableAssociation"
+      }
+    },
+    "wavenativevpcPrivateSubnet2DefaultRouteF33601AB": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "wavenativevpcPrivateSubnet2RouteTable90E20DFF"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "wavenativevpcPublicSubnet2NATGateway6137AFD2"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/PrivateSubnet2/DefaultRoute"
+      }
+    },
+    "wavenativevpcIGW3C6D4E2D": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "wave-native-cdk/wave-native_vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/IGW"
+      }
+    },
+    "wavenativevpcVPCGWDF3086D1": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "wavenativevpc741E600C"
+        },
+        "InternetGatewayId": {
+          "Ref": "wavenativevpcIGW3C6D4E2D"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "wave-native-cdk/wave-native_vpc/VPCGW"
+      }
+    }
+  }
+}
